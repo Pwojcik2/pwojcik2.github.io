@@ -4,9 +4,17 @@
 
     // COLOR MODE
     $('.color-mode').click(function(){
-        $('.color-mode-icon').toggleClass('active')
-        $('body').toggleClass('dark-mode')
-    })
+      $('.color-mode-icon').toggleClass('active');
+      $('body').toggleClass('dark-mode');
+
+      // Update project images based on dark mode
+      $('.project-info img').each(function() {
+          var originalSrc = $(this).attr('src');
+          var darkModeSrc = originalSrc.replace('images/project/', 'images/project-dark/');
+          var lightModeSrc = originalSrc.replace('images/project-dark/', 'images/project/');
+          $(this).attr('src', $('body').hasClass('dark-mode') ? darkModeSrc : lightModeSrc);
+      });
+  });
 
     // HEADER
     $(".navbar").headroom();
