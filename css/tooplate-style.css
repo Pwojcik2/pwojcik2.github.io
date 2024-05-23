@@ -441,11 +441,11 @@ b, strong {
   font-weight: bold;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .juniorPos {
-  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .owl-carousel .owl-nav span {
