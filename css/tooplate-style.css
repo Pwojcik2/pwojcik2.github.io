@@ -444,6 +444,10 @@ b, strong {
   margin-left: 15px;
 }
 
+.juniorPos {
+  margin-left: 0 !important;
+}
+
 .owl-carousel .owl-nav span {
   display: none;
 }
