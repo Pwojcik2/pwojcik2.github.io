@@ -5,6 +5,20 @@ body {
   background: linear-gradient(180deg, rgba(255,255,255,1) 45%, #0075ff34 100%);
 }
 
+.btn {
+  border-color: #6c757d;
+}
+
+.btn:hover {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.015);
+}
+
+.cardImg {
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
 .column {
   float: left;
   width: 25%;
@@ -28,8 +42,10 @@ body {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 0 0 10px;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -97,7 +113,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #0075ff !important;
+  color: #0075ff;
 }
 
 .navbar-brand .uil {
