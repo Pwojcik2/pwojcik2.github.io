@@ -401,6 +401,10 @@ b, strong {
   color: #ffffff;
 }
 
+.dark-mode .card {
+  box-shadow: 0 4px 12px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+}
+
 .timeline-wrapper {
   position: relative;
   padding: 22px 0;
