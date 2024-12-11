@@ -31,14 +31,27 @@ body {
   max-height: 204px;
 }
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 20px 20px 0;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 0 0 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 388px;
+  width: 390px;
+  max-width: 390px;
+  max-height: 388px;
 }
 
 .cardMore {
   height: 300px !important;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px 20px 0;
 }
 
 .row {
@@ -57,19 +70,6 @@ body {
     display: block;
     margin-bottom: 20px;
   }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  transition: 0.3s;
-  padding: 0 0 10px;
-  text-align: center;
-  background-color: #f1f1f1;
-  height: 388px;
-  width: 390px;
-  max-width: 390px;
-  max-height: 388px;
 }
 
 .img-fluid {
