@@ -24,29 +24,29 @@ body {
 
 .cardImg {
   border-radius: 10px;
-  padding-bottom: 10px;
-  height: 204px;
+  height: 320px;
   width: 388px;
   max-width: 388px;
-  max-height: 204px;
+  max-height: 320px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   transition: 0.3s;
-  padding: 0 0 10px;
   text-align: center;
-  background-color: #f1f1f1;
-  height: 388px;
+  background-color: transparent;
+  height: 320px;
   width: 390px;
   max-width: 390px;
-  max-height: 388px;
+  max-height: 320px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 
-.cardMore {
-  height: 300px !important;
-}
 
 .column {
   float: left;
@@ -94,6 +94,46 @@ body {
 
 .owl-carousel .item {
   position: relative;
+}
+
+.card .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.card:hover .container {
+  opacity: 1;
+}
+
+.card .projectTitle, .card p {
+  color: white !important;
+}
+
+.card .container .btn {
+  background-color: #0075ff;
+  color: white;
+  border: none;
+  margin: 10px auto 0;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card .container .btn:hover {
+  background-color: white;
+  color: #0075ff;
+  transform: scale(1.05);
 }
 
 .overlay {
