@@ -125,15 +125,15 @@
                 <span class="mr-2">Hi, I'm</span>
                 <div class="animated-info">
                   <span class="animated-item">Patrick Wojcik</span>
-                  <span class="animated-item">Web Developer</span>
-                  <span class="animated-item">Software Engineer</span>
+                  <span class="animated-item">a Web Developer</span>
+                  <span class="animated-item">a Software Engineer</span>
                 </div>
               </h1>
 
               <p class="exDark">
-                I'm an innovative Web Developer/Designer with 2 years of
+                I'm an innovative Software Engineer with 2 years of
                 experience. My passion lies in creating visually compelling and
-                user-friendly designs for websites, apps, and digital marketing
+                user-friendly designs for web apps, and digital marketing
                 materials.
               </p>
 
@@ -497,68 +497,84 @@
     <!-- CONTACT -->
     <section class="contact py-5" id="contact">
       <div class="container">
-        <div class="row">
-          <!-- Google Map -->
-          <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="google-map w-100">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425343.45521941205!2d-112.125051!3d33.6054149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1732748144163!5m2!1sen!2sus"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="col-lg-6 col-12">
-            <div class="contact-form p-4 rounded shadow">
-              <h2 class="mb-4">
-                Interested to work together? Send me a message!
+        <div class="row justify-content-center">
+          <!-- Contact Form with Map -->
+          <div class="col-lg-10 col-12">
+            <div class="contact-form p-4 rounded">
+              <h2 class="mb-4 text-center">
+                Interested to work together?
               </h2>
-              <form action="https://formspree.io/f/xdoqgebg" method="POST">
-                <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input
-                      type="text"
-                      class="form-control mb-3"
-                      name="name"
-                      placeholder="Your Name"
-                      id="name"
-                    />
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <input
-                      type="email"
-                      class="form-control mb-3"
-                      name="email"
-                      placeholder="Email"
-                      id="email"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      rows="6"
-                      class="form-control mb-3"
-                      id="message"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                  <div class="ml-lg-auto col-lg-5 col-12">
-                    <input
-                      type="submit"
-                      class="form-control submit-btn btn-primary"
-                      value="Send"
-                    />
+              
+              <div class="row">
+                <!-- Map Column -->
+                <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                  <div class="google-map w-100 h-100">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425343.45521941205!2d-112.125051!3d33.6054149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1732748144163!5m2!1sen!2sus"
+                      style="border: 0; border-radius: 8px; height: 100%; min-height: 300px;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      class="map-embed"
+                    ></iframe>
                   </div>
                 </div>
-              </form>
+                
+                <!-- Form Column -->
+                <div class="col-lg-6 col-12">
+                  <form action="https://formspree.io/f/xdoqgebg" method="POST">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="name"
+                            placeholder="Your Name"
+                            id="name"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Email"
+                            id="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <textarea
+                            name="message"
+                            rows="5"
+                            class="form-control"
+                            id="message"
+                            placeholder="Your Message"
+                            required
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12 mt-3">
+                        <button
+                          type="submit"
+                          class="submit-btn"
+                        >
+                          <i class="fa fa-paper-plane"></i> Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
